@@ -12,16 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
     </header>
   `);
 
-  // FOOTER
-  document.body.insertAdjacentHTML("beforeend", `
+ document.body.insertAdjacentHTML("beforeend", `
     <footer>
       <div class="footer-links">
-        <a href="/mentalolympique/">Accueil</a>
-        <a href="/mentalolympique/contact.html">Contact</a>
+        <a href="https://www.mentalolympique.fr/infos-pratiques/frequently-asked-questions">FAQ</a>
+        <a href="https://www.mentalolympique.fr/infos-pratiques/mentions-legales">Mentions Légales</a>
+        <a href="https://www.mentalolympique.fr/infos-pratiques/index">Tarifs</a>
+        <a href="https://www.mentalolympique.fr/infos-pratiques/code-de-deontologie">Code de Déontologie</a>
+        <a href="javascript:void(0);" onclick="reopenCookieBanner()" style="color: #333; text-decoration: none; font-weight: bold;">
+          Paramètres de confidentialité
+        </a>
       </div>
       <p style="text-align:center;">© 2025 Frédéric Damato – Site Mental Olympique</p>
     </footer>
   `);
+  
 
   // WhatsApp button
   document.body.insertAdjacentHTML("beforeend", `
