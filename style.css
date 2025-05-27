@@ -168,6 +168,54 @@ caption {
   flex: 1 1 50%;
 }
 
+/* Navigation dropdown */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 8px 10px;
+  display: inline-block;
+}
+
+.nav-menu .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu .dropdown-content li {
+  text-align: left;
+}
+
+.nav-menu .dropdown-content a {
+  padding: 10px;
+  display: block;
+  color: #222;
+  font-weight: normal;
+}
+
+.nav-menu .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* WhatsApp */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -193,8 +241,7 @@ caption {
   transform: scale(1.1);
 }
 
-/* Responsive Styles */
-
+/* Responsive */
 @media (max-width: 768px) {
   .two-column-section,
   .row {
@@ -243,6 +290,10 @@ caption {
   .row > div {
     flex: none;
     width: 100%;
+  }
+
+  .nav-menu {
+    flex-direction: column;
   }
 }
 
