@@ -140,3 +140,56 @@ function handleYouTubeEmbeds() {
     iframe.setAttribute('src', iframe.getAttribute('data-src'));
   });
 }
+
+// HEADER with dropdown nav - inject into script.js
+const headerHTML = `
+<header>
+  <div class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <img src="https://files.gandi.ws/5a/36/5a36ccc1-19e7-4be3-88d0-cdef5951f4e5.jpg" alt="Fred Damato" style="height: 60px; border-radius: 50%;">
+      <h1 style="margin: 0; font-size: 1.8rem; font-weight: 500;">Fred DAMATO</h1>
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#" class="active">Accueil</a></li>
+        <li class="dropdown">
+          <a href="#">Préparation Mentale ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Concentration</a></li>
+            <li><a href="#">Stress</a></li>
+            <li><a href="#">Motivation</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Coaching ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Développement</a></li>
+            <li><a href="#">Personnel</a></li>
+            <li><a href="#">Coaching Personnel</a></li>
+            <li><a href="#">Séance BOOST</a></li>
+            <li><a href="#">Tarifs Coaching</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Infos ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Mentions Légales</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#" onclick="reopenCookieBanner()">Confidentialité</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Avis ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Sportifs</a></li>
+            <li><a href="#">Parents</a></li>
+            <li><a href="#">Professionnels</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>`;
+
+document.body.insertAdjacentHTML("afterbegin", headerHTML);
