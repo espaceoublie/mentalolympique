@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <header>
     <div class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
       <div style="display: flex; align-items: center; gap: 12px;">
-        <img src="https://github.com/espaceoublie/mentalolympique/blob/f676f7eebb72b080678d386f8772683fd5c5519c/images/logo.png" alt="Logo Mental Olympique" style="height: 60px;">
+        <img src="images/logo.png" alt="Logo Mental Olympique" style="height: 60px;">
         <h1 style="margin: 0; font-size: 1.8rem; font-weight: 500;">Fred DAMATO</h1>
       </div>
       <nav>
