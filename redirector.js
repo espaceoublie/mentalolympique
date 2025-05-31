@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const redirects = {
-    "/séances-à-distance": "/seances-a-distance",
+     "/séances-à-distance": "/seances-a-distance",
     "/test2": "/home",
     "/test-tarifs": "/infos-pratiques/index",
     "/test": "/home",
@@ -57,7 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
     "/améliorer-sa-concentrations": "/ameliorer-sa-concentration"
   };
 
-    const currentPath = decodeURIComponent(window.location.pathname);
+  let currentPath = decodeURIComponent(window.location.pathname);
+  if (currentPath.endsWith("/")) {
+    currentPath = currentPath.slice(0, -1);
+  }
+
   const target = redirects[currentPath];
 
   if (target) {
@@ -66,4 +70,3 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.replace("/");
   }
 });
-
