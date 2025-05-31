@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "/coaching1/avis-de-coachée-annaëlle": "/coaching1/avis-de-coachee-annaelle",
     "/coaching1/avis-de-coachée-chantal": "/coaching1/avis-de-coachee-chantal",
     "/coaching1/avis-étudiant-maxime": "/coaching1/avis-etudiant-maxime",
-    "/coaching1/avis-de-coaché": "/coaching1/avis-de-coache",
+    "/coaching1/avis-de-coaché": "/coaching1/christophe",
     "/avis1/témoignages-dentraineurs": "/avis1/temoignages-dentraineurs",
     "/avis1/avis-de-coachés": "/avis1/avis-de-coaches",
     "/avis": "/avis-sportifs/",
