@@ -57,10 +57,13 @@ document.addEventListener("DOMContentLoaded", function () {
     "/améliorer-sa-concentrations": "/ameliorer-sa-concentration"
   };
 
-  const currentPath = window.location.pathname;
-  if (redirects[currentPath]) {
-    window.location.replace(redirects[currentPath]);
+    const currentPath = decodeURIComponent(window.location.pathname);
+  const target = redirects[currentPath];
+
+  if (target) {
+    window.location.replace(target);
   } else {
     window.location.replace("/");
   }
 });
+
