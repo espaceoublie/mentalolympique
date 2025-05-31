@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "/améliorer-sa-concentrations": "/ameliorer-sa-concentration"
   };
 
-  let currentPath = decodeURIComponent(window.location.pathname);
+  let currentPath = decodeURIComponent(window.location.pathname).replace(/\/$/, "");
   if (currentPath.endsWith("/")) {
     currentPath = currentPath.slice(0, -1);
   }
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const target = redirects[currentPath];
 
   if (target) {
-    window.location.replace(target);
+    window.location.replace("https://www.mentalolympique.fr" + target);
   } else {
     window.location.replace("/");
   }
