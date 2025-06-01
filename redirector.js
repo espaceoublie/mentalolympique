@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "/préparer-une-compétitions": "/preparer-une-competition",
     "/préparer-une-compétition": "/preparer-une-competition",
     "/préparation-mentale/seance-skype": "/seances-a-distance",
-    "/preparation-mentale": "/preparation-mentale/preparation-mentale-adultes",
     "/préparation-mentale/preparation-mentale-espoirs-17": "/preparation-mentale/preparation-mentale-espoirs-17",
     "/préparation-mentale/preparation-mentale-adultes": "/preparation-mentale/preparation-mentale-adultes",
     "/préparation-mentale/mental-coaching": "/preparation-mentale/mental-coaching",
@@ -57,8 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "/avis": "/avis-sportifs/",
     "/améliorer-sa-concentrations": "/ameliorer-sa-concentration"
   };
-
-  redirects["/preparation-mentale/"] = redirects["/preparation-mentale"];
 
   let currentPath = decodeURIComponent(window.location.pathname).replace(/\/$/, "");
   if (currentPath.endsWith("/")) {
