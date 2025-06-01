@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "/améliorer-sa-concentrations": "/ameliorer-sa-concentration"
   };
 
+  redirects["/preparation-mentale/"] = redirects["/preparation-mentale"];
+
   let currentPath = decodeURIComponent(window.location.pathname).replace(/\/$/, "");
   if (currentPath.endsWith("/")) {
     currentPath = currentPath.slice(0, -1);
